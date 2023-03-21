@@ -24,7 +24,8 @@ public class Car {
     
     // car number 
     private  String carNumber;
-
+    
+    // car total seats
     private int totalSeats;
 
     private String availableForBooking;
