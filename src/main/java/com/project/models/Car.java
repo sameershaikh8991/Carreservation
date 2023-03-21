@@ -21,7 +21,8 @@ public class Car {
 
     // car name
     private  String carName;
-
+    
+    // car number 
     private  String carNumber;
 
     private int totalSeats;
