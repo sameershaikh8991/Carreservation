@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 
 @Entity
 @Table(name = "car")
@@ -17,6 +18,8 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  int id;
+
+    // car name
     private  String carName;
 
     private  String carNumber;
