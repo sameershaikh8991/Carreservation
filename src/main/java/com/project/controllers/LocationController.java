@@ -15,7 +15,6 @@ public class LocationController {
     private LocationService locationService;
 
 
-
     @PostMapping("/addlocation")
     public Location saveLocation(@RequestBody Location location){
         System.out.println("loc controller");

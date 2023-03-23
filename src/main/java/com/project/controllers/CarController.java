@@ -3,9 +3,10 @@ package com.project.controllers;
 
 import com.project.models.Car;
 import com.project.services.CarService;
-import com.project.services.CarServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -19,4 +20,11 @@ public class CarController {
     public Car saveBus(@RequestBody Car car) {
         return service.saveCar(car);
     }
+
+    @GetMapping("/all")
+    public List<Car> allCar(){
+        return  service.getAlL();
+    }
+
+
 }
